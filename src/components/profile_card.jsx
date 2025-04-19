@@ -26,7 +26,7 @@ const ProfileCard = () => {
         className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
       />
       <h2 className="text-xl font-semibold">{user.name}</h2>
-      <h4 className="text-sm text-gray-500 mb-1">{user.title}</h4>
+      <h4 className="text-sm text-green-500 mb-1">{user.title}</h4>
       <p className="text-sm text-gray-700">{user.description}</p>
       <p className="text-xs text-gray-400 mt-2">{user.email}</p>
       <p className="text-xs text-gray-400">{user.location}</p>

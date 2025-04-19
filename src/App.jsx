@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ProfileCard from './components/profile_card';
 import CounterApp from './components/CounterApp';
-
+import SignupForm from './components/SignupForm';
 function App() {
   // Step 1: Create a state to manage dark mode
   const [darkMode, setDarkMode] = useState(false);
@@ -18,7 +18,7 @@ function App() {
       {/* Step 4: Add the Toggle Button */}
       <button 
         onClick={changeMode}
-        className="mb-6 px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition"
+        className="mb-6 px-4 py-2 rounded bg-blue-600 text-black hover:bg-blue-700 transition"
       >
         {darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
       </button>
@@ -28,6 +28,7 @@ function App() {
         <ProfileCard />
         <CounterApp title="ihirwe irene" />
         <CounterApp title="IMANIRAHARI Didier" initialValue={7} />
+        <SignupForm/>
         {/* <CounterApp title="Downloads Counter" initialValue={0} /> */}
       </div>
     </div>
